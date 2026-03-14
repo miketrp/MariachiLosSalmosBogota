@@ -1,0 +1,21 @@
+# Robots.txt para Mariachis Los Salmos
+User-agent: *
+Allow: /
+
+# Bloquear rutas de administración y archivos sensibles
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Permitir acceso a recursos estáticos
+Allow: /images/
+Allow: /favicon.ico
+Allow: /site.webmanifest
+
+# Tiempo de espera para rastreadores
+Crawl-delay: 1
+
+# Sitemap principal
+Sitemap: https://mariachislossalmosbogota.vercel.app/sitemap.xml
+Sitemap: https://mariachislossalmosbogota.netlify.app/sitemap.xml

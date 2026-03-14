@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ece1e1;
+  --foreground: #171717;
+  --primary-gold: #e8e6e6;
+  --secondary-orange: #1a0802;
+  --accent-red: #000000;
+  --warm-brown: #8B4513;
+  --cream: #000000;
+  --warm-white: #050401;
+  --rich-black: #111827;
+  --mariachi-gold: #000000;
+  --fiesta-red: #060201;
+  --sunset-orange: #012e0e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0d0404;
+    --foreground: #000000;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #100606;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0c0404;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #070202;
+}
+
+/* Custom utilities for colors */
+.bg-primary-gold {
+  background-color: var(--primary-gold);
+}
+
+.text-primary-gold {
+  color: var(--primary-gold);
+}
+
+.bg-secondary-orange {
+  background-color: var(--secondary-orange);
+}
+
+.text-secondary-orange {
+  color: var(--secondary-orange);
+}
+
+.bg-accent-red {
+  background-color: var(--accent-red);
+}
+
+.text-accent-red {
+  color: var(--accent-red);
+}
+
+.bg-warm-brown {
+  background-color: var(--warm-brown);
+}
+
+.text-warm-brown {
+  color: var(--warm-brown);
+}
+
+.bg-rich-black {
+  background-color: var(--rich-black);
+}
+
+.text-rich-black {
+  color: var(--rich-black);
+}
+
+.bg-mariachi-gold {
+  background-color: var(--mariachi-gold);
+}
+
+.text-mariachi-gold {
+  color: var(--mariachi-gold);
+}
+
+.bg-fiesta-red {
+  background-color: var(--fiesta-red);
+}
+
+.text-fiesta-red {
+  color: var(--fiesta-red);
+}
+
+.bg-sunset-orange {
+  background-color: var(--sunset-orange);
+}
+
+.text-sunset-orange {
+  color: var(--sunset-orange);
+}
