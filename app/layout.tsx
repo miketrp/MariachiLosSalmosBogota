@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import SocialButtons from "@/components/SocialButtons";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -113,6 +114,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <WhatsAppButton phoneNumber="573132366760" />
+        <Analytics />
       </body>
     </html>
   );
